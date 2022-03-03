@@ -40,7 +40,7 @@ There are 6 docker images you need for this laboratory. Those are:
 
     For the remainng images, it is easier if you copy the contents of
     the
-    [docker-images](https://github.com/jorgelopezcoronado/SDNLab/tree/master/docker-images)
+    [docker-images](https://github.com/nunomcruz/SDNLab/tree/master/docker-images)
     found in this repository. You can download via http or git. Change
     to that directory (`cd docker-images`).
 
@@ -138,6 +138,8 @@ following commands:
 Your topology should be up and running, this is the intended topology:
 
 ![image](/images/topology.png)
+
+Access it via ONOS Web UI, at http://docker.ip/onos/ui/login.html, user: karaf, pass: karaf
 
 Inside the containernet console you can try to check the connectivity
 between hosts, for instance from h1 to h2, execute:

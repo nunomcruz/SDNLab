@@ -139,8 +139,6 @@ Your topology should be up and running, this is the intended topology:
 
 ![image](/images/topology.png)
 
-Access it via ONOS Web UI, at http://docker.ip/onos/ui/login.html, user: karaf, pass: karaf
-
 Inside the containernet console you can try to check the connectivity
 between hosts, for instance from h1 to h2, execute:
 
@@ -169,7 +167,7 @@ your Onos controller via:
 Once logged in, execute the Onos Command Line Interface (CLI) or client
 console by executing:
 
-            ./apache-karaf-4.2.8/bin/client
+            ./apache-karaf-4.2.14/bin/client
         
 
 Inside the Onos console you can check many things, however, for the

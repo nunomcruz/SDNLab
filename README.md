@@ -256,7 +256,7 @@ opportunity to create so called *Intents*, which is to state a data-path
 starting at a given host (or switch port) and that finishes at another
 host (or switch port). The easiest way to use intents is to do it from
 the GUI. To do so, go to the main menu `->` Topology, click h1
-(10.0.0.251), while holding shift click h2 (10.0.0.252), and then click
+(192.168.200.251), while holding shift click h2 (192.168.200.252), and then click
 the `Create Host-To-Host Flow` as shown in the picture below.
 
 ![image](/images/GUIIntent.png)
@@ -354,11 +354,11 @@ into the *stream* field:
         },
         {
           "type": "IPV4_SRC",
-          "ip": "10.0.0.252/32"
+          "ip": "192.168.200.252/32"
         },
         {
           "type": "IPV4_DST",
-          "ip": "10.0.0.251/32"
+          "ip": "192.168.200.251/32"
         }, 
         {   
           "type": "IP_PROTO",
@@ -406,11 +406,11 @@ communication. To do so, add the following intent:
         },
         {
           "type": "IPV4_SRC",
-          "ip": "10.0.0.251/32"
+          "ip": "192.168.200.251/32"
         },
         {
           "type": "IPV4_DST",
-          "ip": "10.0.0.252/32"
+          "ip": "192.168.200.252/32"
         }, 
         {   
           "type": "IP_PROTO",
@@ -455,7 +455,7 @@ To exemplify how to configure a data-path using flow rules let us
 configure the data-path(s) h4`<->`s4`<->`s3`<->`h3 for the traffic matching
 (i.e., with selector):
 
-        ETH_TYPE=0x800 and IPV4_SRC=10.0.0.254/32 and IPV4_DST=10.0.0.253/32 and IP_PROTO=6 and TCP_DST=5000
+        ETH_TYPE=0x800 and IPV4_SRC=192.168.200.254/32 and IPV4_DST=192.168.200.253/32 and IP_PROTO=6 and TCP_DST=5000
 
 Go to the REST API to post flows
 (<http://localhost:8181/onos/v1/docs/#!/flows/post_flows>), post the
@@ -493,11 +493,11 @@ following flow rule (choose any app ID of your choosing, remember it):
                 },
                 {
                   "type": "IPV4_SRC",
-                  "ip": "10.0.0.254/32"
+                  "ip": "192.168.200.254/32"
                 },
                 {
                   "type": "IPV4_DST",
-                  "ip": "10.0.0.253/32"
+                  "ip": "192.168.200.253/32"
                 }, 
                 {   
                   "type": "IP_PROTO",
@@ -524,13 +524,13 @@ After adding the rules log in to `h4` using:
 
 Execute the following command:
 
-            curl 10.0.0.253:5000/; echo;
+            curl 192.168.200.253:5000/; echo;
         
 
 If you see a JSON message you have successfully added the rules. If you
 see the following message then your rules are wrong:
 
-            curl: (7) Failed to connect to 10.0.0.253 port 5000: Connection refused
+            curl: (7) Failed to connect to 192.168.200.253 port 5000: Connection refused
         
 
 If you did not configure the rules properly, an easy way to delete flow

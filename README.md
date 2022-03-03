@@ -131,7 +131,7 @@ Inside the container, to run the intended topology, execute the
 following commands:
 
             mn -c;
-            curl https://raw.githubusercontent.com/jorgelopezcoronado/SDNLab/master/custom_ctnnet_topology.py > cmnt.py;
+            curl https://raw.githubusercontent.com/nunomcruz/SDNLab/master/custom_ctnnet_topology.py > cmnt.py;
             python cmnt.py
         
 

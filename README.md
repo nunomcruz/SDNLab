@@ -22,7 +22,28 @@ There are 6 docker images you need for this laboratory. Those are:
     image](https://hub.docker.com/r/onosproject/onos/), to get it,
     execute:
 
-    ```bash
+    ```bashversion: '3.3'
+
+services:
+  onos:
+    image: onosproject/onos:latest
+    restart: always
+    ports:
+      - "8181:8181"
+      - "6633:6633"
+      - "6653:6653"
+    container_name: onos
+
+  containernet: 
+    depends_on: 
+      - onos
+    image: containernet/containernet:latest
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"      
+    privileged: true
+    pid: host
+    tty: true
+    container_name: containernet
                 docker pull onosproject/onos
             
      ```

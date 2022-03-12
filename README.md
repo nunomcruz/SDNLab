@@ -21,7 +21,7 @@ There are 6 docker images you need for this laboratory. Those are:
 1.  The official [Onos docker
     image](https://hub.docker.com/r/onosproject/onos/), to get it,
     execute:
-
+    ```bash
     ```bashversion: '3.3'
 
 services:

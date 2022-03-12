@@ -103,7 +103,7 @@ the following contents (or download it from the repository)
       containernet: 
         depends_on: 
           - onos
-        image: containernet/containernet:v1
+        image: containernet/containernet:latest
         volumes:
           - "/var/run/docker.sock:/var/run/docker.sock"      
         privileged: true

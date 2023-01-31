@@ -93,7 +93,6 @@ the following contents (or download it from the repository)
     services:
       onos:
         image: onosproject/onos:latest
-        restart: always
         ports:
           - "8181:8181"
           - "6633:6633"

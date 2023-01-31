@@ -3,7 +3,6 @@ version: '3.3'
 services:
    onos:
       image: onosproject/onos:latest
-      restart: always
       ports:
          - "8181:8181"
          - "6633:6633"

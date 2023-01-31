@@ -61,7 +61,7 @@ There are 6 docker images you need for this laboratory. Those are:
             
     ```
 
-5.  A modified lab-api image (referred as h3, from the previous lab), to
+5.  A modified lab-api image (referred as h3), to
     get it, execute:
 
     ``` {.bash language="bash"}
@@ -69,7 +69,7 @@ There are 6 docker images you need for this laboratory. Those are:
             
     ```
 
-6.  A modified lab-web image (referred as h4, from the previous lab), to
+6.  A modified lab-web image (referred as h4), to
     get it, execute:
 
     ``` {.bash language="bash"}

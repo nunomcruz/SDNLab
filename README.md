@@ -131,7 +131,7 @@ following commands:
 
             mn -c;
             curl https://raw.githubusercontent.com/nunomcruz/SDNLab/master/custom_ctnnet_topology.py > cmnt.py;
-            python cmnt.py
+            python3 cmnt.py
         
 
 Your topology should be up and running, this is the intended topology:
